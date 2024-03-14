@@ -35,14 +35,14 @@ export default defineConfig({
 						description: 'The image used for the cover of the post'
 					},
 
-					{
-						type: 'string',
-						required: true,
-						name: 'category',
-						label: 'Category',
-						description: 'Select an category for this post',
-						options: [...CATEGORIES]
-					},
+					// {
+					// 	type: 'string',
+					// 	required: true,
+					// 	name: 'category',
+					// 	label: 'Category',
+					// 	description: 'Select an category for this post',
+					// 	options: [...CATEGORIES]
+					// },
 					{
 						type: 'string',
 						label: 'description',
