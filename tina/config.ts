@@ -1,4 +1,3 @@
-import { CATEGORIES } from '../src/data/categories.ts'
 import { defineConfig } from 'tinacms'
 
 // Your hosting provider likely exposes this as an environment variable
@@ -6,8 +5,8 @@ const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || 'main'
 
 export default defineConfig({
 	branch,
-	clientId: null, // Get this from tina.io
-	token: null, // Get this from tina.io
+	clientId: 'a3c88067-a7a7-4cfa-b8ca-b1b347c80f03', // Get this from tina.io
+	token: '7a2f72e96295f331b64610ad846e720cfbf18bf2', // Get this from tina.io
 
 	build: {
 		outputFolder: 'admin',
