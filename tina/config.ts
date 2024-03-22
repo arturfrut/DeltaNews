@@ -8,8 +8,8 @@ const token = process.env.TOKEN || ''
 
 export default defineConfig({
 	branch: 'main',
-	clientId, // Get this from tina.io
-	token, // Get this from tina.io
+	clientId: 'a3c88067-a7a7-4cfa-b8ca-b1b347c80f03', // Get this from tina.io
+	token: '7a2f72e96295f331b64610ad846e720cfbf18bf2', // Get this from tina.io
 
 	build: {
 		outputFolder: 'admin',
