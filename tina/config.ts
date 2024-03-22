@@ -7,7 +7,7 @@ const clientId = process.env.CLIENT_ID || ''
 const token = process.env.TOKEN || ''
 
 export default defineConfig({
-	branch,
+	branch: 'main',
 	clientId, // Get this from tina.io
 	token, // Get this from tina.io
 
