@@ -3,8 +3,8 @@ import { defineConfig } from 'tinacms'
 // Your hosting provider likely exposes this as an environment variable
 const branch = 'main'
 
-const clientId = process.env.CLIENT_ID || process.env.NEXT_PUBLIC_TINA_CLIENT_ID
-const token = process.env.TOKEN || process.env.TINA_TOKEN
+const clientId = process.env.CLIENT_ID ?? process.env.NEXT_PUBLIC_TINA_CLIENT_ID
+const token = process.env.TOKEN ?? process.env.TINA_TOKEN
 
 export default defineConfig({
 	branch: branch,
@@ -37,14 +37,6 @@ export default defineConfig({
 						description: 'The image used for the cover of the post'
 					},
 
-					// {
-					// 	type: 'string',
-					// 	required: true,
-					// 	name: 'category',
-					// 	label: 'Category',
-					// 	description: 'Select an category for this post',
-					// 	options: [...CATEGORIES]
-					// },
 					{
 						type: 'string',
 						label: 'description',
