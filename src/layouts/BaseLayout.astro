@@ -1,9 +1,9 @@
 ---
 import BaseHead from '@/components/BaseHead'
-import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import ProviderTheme from '@/components/ProviderTheme'
+import Header from '@/components/Header'
 import ProviderAnimations from '@/components/ProviderAnimations'
+import ProviderTheme from '@/components/ProviderTheme'
 import TwSizeIndicator from '@/components/TwSizeIndicator'
 import EditBlog from '@/components/editBlog'
 const { title, description, image, articleDate } = Astro.props
@@ -20,6 +20,8 @@ const { title, description, image, articleDate } = Astro.props
 		<main
 			class='px-5 sm:mx-auto sm:max-w-2xl sm:px-8 lg:px-0 antialiased md:max-w-6xl grid gap-12 mt-4 overflow-hidden md:overflow-visible'
 		>
+		<div class="ad-slot-box" id="ad-slot-box_1"></div>
+
 			<Header />
 			<slot />
 			<Footer />

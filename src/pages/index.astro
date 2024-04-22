@@ -11,8 +11,7 @@ const posts = await getPosts(MAX_POSTS)
 <BaseLayout title='Home'>
 	<TitlePage title='Finance Go' />
 	<!-- <ListCategories /> -->
-	<div class="ad-slot-box" id="ad-slot-box1"></div>
-	<div class="ad-slot-box" id="ad-slot-box2"></div>
+
 	<div>
 		<h2 class='text-lg font-medium tracking-wide text-end'>Latest Posts</h2>
 		<ListPosts FirstBig={true} posts={posts} />
@@ -36,3 +35,44 @@ const posts = await getPosts(MAX_POSTS)
 		)
 	}
 </script>
+
+<!-- 
+</HEAD>
+<style>
+    div[class^="ad-slot-"]{min-width: 100%; display:inline-block; border:1px solid black }
+    .ad-slot-horizontal {height:auto;min-height:90px }
+    .ad-slot-billboard {height:auto;min-height:90px }
+    .ad-slot-box {height:250px}
+    .ad-slot-bigbox {height:600px}
+
+    @media screen and (max-width:730px){
+    /* Mobile */ 
+      .ad-slot-top{min-height:100px }
+    }
+    @media screen and (min-width:731px){
+    /* Desktop */
+      .ad-slot-top{min-height:90px }
+    }
+  </style>
+<BODY>
+
+
+<div class="ad-slot-header" id="ad-slot-header"></div>
+
+<div class="ad-slot-box" id="ad-slot-box_1"></div>
+<div class="ad-slot-box" id="ad-slot-box_2"></div>
+<div class="ad-slot-box" id="ad-slot-box_3"></div>
+<div class="ad-slot-box" id="ad-slot-box_4"></div>
+<div class="ad-slot-box" id="ad-slot-box_5"></div>
+
+<div class="ad-slot-horizontal" id="ad-slot-horizontal_1"></div>
+<div class="ad-slot-horizontal" id="ad-slot-horizontal_2"></div>
+<div class="ad-slot-horizontal" id="ad-slot-horizontal_3"></div>
+
+<div class="ad-slot-billboard" id="ad-slot-billboard_1"></div>
+<div class="ad-slot-billboard" id="ad-slot-billboard_2"></div>
+<div class="ad-slot-billboard" id="ad-slot-billboard_3"></div>
+
+
+</BODY>
+</HTML> -->
