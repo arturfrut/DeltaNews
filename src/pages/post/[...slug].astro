@@ -38,6 +38,7 @@ const { Content, headings, remarkPluginFrontmatter } = await post.render()
 const disqusEnabled = disqusConfig.enabled
 ---
 
+<div class="ad-slot-header" id="ad-slot-header"></div>
 <BlogPost
 	id={post.id}
 	data={post.data}
@@ -45,7 +46,6 @@ const disqusEnabled = disqusConfig.enabled
 	readTime={remarkPluginFrontmatter.minutesRead}
 >
 	<div class='grid grid-cols-1 md:grid-cols-[20%_auto] gap-10 mt-8'>
-		<div class="ad-slot-header" id="ad-slot-header"></div>
 
 		<!-- aside  -->
 		<aside class='md:flex flex-col gap-8 hidden'>
@@ -70,5 +70,5 @@ const disqusEnabled = disqusConfig.enabled
 	</div>
 	
 	{disqusEnabled && <Disqus />}
-  <div class="ad-slot-horizontal" id="ad-slot-horizontal_1"></div>
 </BlogPost>
+<div class="ad-slot-horizontal" id="ad-slot-horizontal_1"></div>
