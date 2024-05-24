@@ -9,7 +9,21 @@ const totalPosts = await getMaxPosts();
 const totalPages = Math.ceil(totalPosts / MAX_POSTS); 
 
 ---
+<div class="ad-slot-header" id="ad-slot-header"></div>
 
+<div class="ad-slot-box" id="ad-slot-box_1"></div>
+<div class="ad-slot-box" id="ad-slot-box_2"></div>
+<div class="ad-slot-box" id="ad-slot-box_3"></div>
+<div class="ad-slot-box" id="ad-slot-box_4"></div>
+<div class="ad-slot-box" id="ad-slot-box_5"></div>
+
+<div class="ad-slot-horizontal" id="ad-slot-horizontal_1"></div>
+<div class="ad-slot-horizontal" id="ad-slot-horizontal_2"></div>
+<div class="ad-slot-horizontal" id="ad-slot-horizontal_3"></div>
+
+<div class="ad-slot-billboard" id="ad-slot-billboard_1"></div>
+<div class="ad-slot-billboard" id="ad-slot-billboard_2"></div>
+<div class="ad-slot-billboard" id="ad-slot-billboard_3"></div>
 <HomePage posts={posts} pageNumber={1} totalPages={totalPages} />
 
 <!-- 
