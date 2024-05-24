@@ -13,6 +13,19 @@ export const getPosts = async (max?: number) => {
 		.slice(0, max)
 }
 
+export const getMaxPosts = async () => (await getCollection('blog')).length
+
+export const getPostsPagination = async (pageNumber: number, pageSize: number) => {
+  const allPosts = (await getCollection('blog'))
+    .filter((post) => !post.data.draft)
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+  const start = (pageNumber - 1) * pageSize;
+  const end = pageNumber * pageSize;
+
+  return allPosts.slice(start, end);
+};
+
 export const getTags = async () => {
 	const posts = await getCollection('blog')
 	const tags = new Set()

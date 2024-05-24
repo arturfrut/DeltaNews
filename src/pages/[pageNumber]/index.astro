@@ -1,0 +1,25 @@
+---
+// src/pages/[pageNumber]/index.astro
+import { getMaxPosts, getPostsPagination } from '@/utils';
+import HomePage from '@/components/HomePage';
+
+export async function getStaticPaths() {
+  const totalPosts = await getMaxPosts();
+  const totalPages = Math.ceil(totalPosts / 5);
+
+  const paths = Array.from({ length: totalPages }, (_, i) => ({
+    params: { pageNumber: (i + 1).toString() },
+  }));
+
+  return paths
+  
+}
+
+const { pageNumber } = Astro.params;
+
+const posts = await getPostsPagination(parseInt(pageNumber), 5);
+const totalPosts = await getMaxPosts();
+const totalPages = Math.ceil(totalPosts / 5);
+---
+
+<HomePage posts={posts} pageNumber={pageNumber} totalPages={totalPages} />
