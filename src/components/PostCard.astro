@@ -10,6 +10,7 @@ const {
 	slug
 } = Astro.props
 ---
+<div class="ad-slot-header" id="ad-slot-header"></div>
 
 <article class='grid grid-rows-[300px_auto] md:grid-rows-[300px_220px] min-h-full group'>
 	<a class='relative overflow-hidden' href={`/post/${slug}/`}>
@@ -63,6 +64,7 @@ const {
 		</footer>
 	</div>
 </article>
+<div class="ad-slot-horizontal" id="ad-slot-horizontal_1"></div>
 
 <script>
 	import { animate } from 'motion'
