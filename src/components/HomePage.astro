@@ -6,6 +6,9 @@ import BaseLayout from '@/layouts/BaseLayout'
 
 const { posts, pageNumber, totalPages } = Astro.props;
 ---
+<div class="ad-slot-header" id="ad-slot-header"></div>
+
+
 
 <BaseLayout title='Home'>
   <TitlePage title='Finance Go' />
@@ -28,6 +31,7 @@ const { posts, pageNumber, totalPages } = Astro.props;
     )}
   </div>
 </BaseLayout>
+<div class="ad-slot-horizontal" id="ad-slot-horizontal_1"></div>
 
 <script>
   import { animate } from 'motion'
